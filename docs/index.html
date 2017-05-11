@@ -8,6 +8,24 @@
     <link rel=stylesheet href="app.css">
   </head>
   <body>
+
+
+    <section class="nosupport" hidden>
+      <h4>Apologies.. your browser doesn't support ES Modules. </h4>
+      <p>You <a href="https://github.com/paulirish/es-modules-todomvc#readme">may be able to enable them with a flag</a>.
+    </section>
+
+    <script nomodule>
+      // script only runs browsers that don't support modules (ideally)
+      document.querySelector('.nosupport').hidden = false;
+    </script>
+    <script type=module>
+      // requires modules to hide. (FOUC in non-[nomodule] supporting browsers right now)
+     import {qs} from './helpers.js'
+      qs('.nosupport').hidden = true;
+    </script>
+
+
     <section class="todoapp">
       <header class="header">
         <h1>todos</h1>
