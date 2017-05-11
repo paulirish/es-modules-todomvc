@@ -1,4 +1,4 @@
-import {remove} from './helpers'
+import {remove} from './helpers.js'
 export default Store
 
 /**

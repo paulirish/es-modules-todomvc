@@ -1,9 +1,9 @@
-import View from './view'
-import Controller from './controller'
-import Model from './model'
-import Store from './store'
-import Template from './template'
-import {remove} from './helpers'
+import View from './view.js'
+import Controller from './controller.js'
+import Model from './model.js'
+import Store from './store.js'
+import Template from './template.js'
+import {remove} from './helpers.js'
 
 export {updateTodo, getTodo, subscribe}
 

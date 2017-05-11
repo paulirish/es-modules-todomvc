@@ -1,5 +1,5 @@
 /* eslint no-invalid-this: 0, complexity:[2, 9] */
-import {qs, qsa, $on, $parent, $delegate} from './helpers'
+import {qs, qsa, $on, $parent, $delegate} from './helpers.js'
 
 /**
  * View that abstracts away the browser's DOM completely.
